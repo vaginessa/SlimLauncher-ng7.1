@@ -51,7 +51,7 @@ public class SlimLauncher extends Launcher {
         mContext = getApplicationContext();
 
         boolean fullscreen = SettingsProvider.getFullscreen(SlimLauncher.this,
-                SettingsProvider.KEY_DOCK_HIDE_BACKGROUND, false);
+                SettingsProvider.KEY_FULLSCREEN, false);
 
         if (fullscreen) {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
